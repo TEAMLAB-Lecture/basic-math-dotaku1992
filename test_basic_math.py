@@ -95,7 +95,7 @@ class TestBasicMath(unittest.TestCase):
 
         random_number_list = [54, 56, 30, 12, 58, 25, 17, 48, 80, 23]
         pred = bm.get_mean(random_number_list)
-        self.assertEqual(pred, 40.3)
+        self.assertEqual(pred, 40.3) # F
 
         random_number_list = [55, 93, 22, 67, 98, 11, 5, 68, 57, 89]
         pred = bm.get_mean(random_number_list)
@@ -132,7 +132,7 @@ class TestBasicMath(unittest.TestCase):
     def test_get_median(self):
         random_number_list = [6, 75, 79, 41, 38, 77, 1, 30, 69, 83]
         pred = bm.get_median(random_number_list)
-        self.assertEqual(pred, 55.0)
+        self.assertEqual(pred, 55.0)   #F
 
         random_number_list = [78, 15, 69, 26, 84, 17, 67, 95, 76, 82]
         pred = bm.get_median(random_number_list)
@@ -165,7 +165,11 @@ class TestBasicMath(unittest.TestCase):
         random_number_list = [28, 74, 4, 24, 91, 21, 27, 38, 70, 95, 35]
         pred = bm.get_median(random_number_list)
         self.assertEqual(pred, 35)
-
+        print("작동중")
         random_number_list = [33, 24, 23, 92, 30, 40, 38, 95, 87, 69, 68]
         pred = bm.get_median(random_number_list)
         self.assertEqual(pred, 40)
+
+
+if __name__ == "__main__":
+    unittest.main()
